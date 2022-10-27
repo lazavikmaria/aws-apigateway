@@ -10,7 +10,7 @@ resource "aws_lambda_function" "this" {
 
   environment {
     variables = {
-      OWNER_NAME = "Denis Astahov"
+      OWNER_NAME = ""
     }
   }
 }
@@ -24,7 +24,7 @@ data "archive_file" "lambda_zip" {
   }
 }
 
-#--------------- Lambda IAM Permissions
+#--------------- Lambda IAM Permissions.
 
 resource "aws_iam_role" "lambda" {
   name               = "${var.name}-iam-role"

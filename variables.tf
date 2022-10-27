@@ -11,8 +11,8 @@ variable "api_gateway_custom_domain_certificate_arn" {
 variable "tags" {
   description = "Tags to apply to Resources"
   default = {
-    Owner   = "Denis Astahov"
-    Company = "ADV-IT"
+    Owner   = ""
+    Company = ""
   }
 }
 

@@ -1,9 +1,5 @@
 # ------------------------------------------------------------------------------
-# Lambda Function for API Gateway Serverless Integration
-#
-# Version  Date              Name            Info
-# 1.0      30-August-2022    Denis Astahov   Initial Version
-#
+# Lambda Function for API Gateway Serverless Integration.
 # ------------------------------------------------------------------------------
 import boto3
 import os

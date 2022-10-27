@@ -9,13 +9,13 @@ resource "aws_api_gateway_domain_name" "this" {
   }
 }
 
-# Get HostedZone details for Domain name
+# Get HostedZone details for Domain name.
 data "aws_route53_zone" "datalake" {
   name         = var.api_gateway_custom_domain
   private_zone = false
 }
 
-# Register Custom Domain name in Route53
+# Register Custom Domain name in Route53.
 resource "aws_route53_record" "apigateway" {
   name    = aws_api_gateway_domain_name.this.domain_name
   type    = "A"
